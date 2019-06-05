@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    text-align: justify;
+    line-height: 30px;
+}
+a{
+    color: #000;
+}
+header{
+    position: fixed;
+    color:white;
+    width:100%;
+    top:0;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0,0,0,0.5); 
+    display: flex;
+    align-items: center;
+    z-index:1;
+    justify-content: center;
+}
+header a{
+    color:white;
+    display: inline-block;
+    padding:20px;
+    width:90%;
+    text-align: center;
+    margin:auto;
+}
+.logo{
+    padding-left:20px;
+    text-align: center;
+}
+.logo img{
+    margin: auto;
+}
+nav{
+    display: flex;
+    width:80%;
+    margin:auto;
+    margin-right:50px;
+
+}
+nav div{
+    padding:0 20px;
+    flex-grow:1;
+    text-align: center;
+    border-bottom:4px solid transparent;
+}
+.on{
+    border-bottom:4px solid #62BEF3;
+}
+.slider{
+    position: fixed;
+    z-index:-3;
+    width:100%;
+    height: 700px;
+    top:0;
+    background-image: url(phone.jpg); 
+
+    background-size:cover; 
+}
+.greeting{
+    text-align: center;
+    color:white;
+    margin:12% auto;
+    max-width:800px;
+}
+.greeting h2{
+    margin-bottom: 20px;
+}
+.greeting p{
+    text-align: center;
+    opacity: 0.7;
+  
+}
+.greeting a{
+    display:inline-block;
+    width:250px;
+    background: #00baff;
+    padding:20px;
+    color:white;
+    border-radius: 5px;
+    margin-top:20px;
+}
+.overview{
+    max-width:1000px;
+    margin:20px auto;
+    padding:20px;
+}
+.overview h2{
+    margin:25px auto;
+    text-align: center;
+    color:#50639e;
+}
+.tools{
+    background: #F0F0F0;
+    padding-bottom: 50px;
+}
+.tools h2{
+    padding:25px 0;
+    text-align: center;
+    color:#50639e;
+}
+.toolCover{
+    display: flex;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin:auto;
+}
+.tool{
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    margin:10px;
+    padding:25px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+    text-align: center;
+    min-height: 410px;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+.tool p{
+    flex-grow: 1;
+}
+.tool h3, .subMarketing h2{
+    margin:15px 0;
+}
+.tool img{
+    border-radius: 50%;
+    width:70px;
+}
+.marketing{
+    background: #50639e url(help.png) 100% 50% no-repeat;
+    background-size: 500px; 
+}
+.subMarketing{
+    max-width: 1000px;
+    color:white;
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px;
+}
+.subMarketing a{
+    border:2px solid white;
+    padding:20px;
+    color:white;
+    border-radius: 5px;
+    margin:25px 0;
+    display: inline-block;
+}
+.subMarketing p{
+    max-width:600px;
+    text-align: left;
+}
+footer{
+    background: #394a7c;
+    background-size:100%; 
+    padding:20px;
+    text-align: center;
+    color:white;
+}
+sup{
+    opacity: 0.5;
+    font-size: 0.7em;
+}
+
+@media screen and (max-width:800px){
+    .logo{
+        display: none;
+    }
+	.toolCover{
+        flex-direction: column;
+    }
+    nav{
+        margin: 0;
+        width:100%;
+    }
+}
+
+
+.marketing li{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.tool span{
+    display: inline-block;
+    min-width: 200px;
+    background:#50639e;
+    border-bottom: 4px solid #394a7c;
+    color: #fff;
+    font-weight: bold;
+    padding:15px;
+    border-radius: 5px;
+    margin-top: 30px;
+
+}

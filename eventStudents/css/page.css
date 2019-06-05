@@ -1,0 +1,251 @@
+/*GENERAL*/
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #eff1fa;
+    padding-top:65px; 
+}
+a{
+    color: #000;
+}
+input{
+    font-size: 100%;
+}
+header{
+    display: flex;
+    width:100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    align-items: center;
+    padding:0 10px; 
+    box-shadow: 0 1px 3px 2px rgba(0,0,0,0.1);
+    background: #fff;
+    z-index: 50;
+}
+
+.logo, .buttons{
+    width: 23%;
+}
+.logo{
+    color: #50639E;
+    font-weight: bold;
+    padding-left: 5px;
+    font-size: 1.1em;
+}
+.menu{
+    flex:1;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    flex:1;
+    text-align: center;
+}
+.menu li a{
+    display: block;
+    color: #000;
+    padding: 17px;
+    cursor: pointer;
+    border-right: 1px solid #dddddd;
+    border-bottom: 4px solid #fff;
+}
+.menu li:first-child a{
+    border-left: 1px solid #dddddd;
+}
+header .active{
+    border-bottom: 4px solid rgb(87, 113, 190) !important;
+    font-weight: bold;
+}
+.buttons{
+    text-align: right;
+}
+.button{
+    padding: 12px;
+    border-radius: 5px;
+    display: inline-block;
+    border:2px solid #50639E;
+    color: #50639E;
+    margin-left: 5px;
+}
+.button:last-child{
+    background: #50639E;
+    color:#fff;
+}
+/*------------------ADD EVENTS------------------*/
+.form-box, .successBar{
+    background: #fff;
+    padding:60px;
+    width:90%;
+    max-width: 850px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.15);
+    margin:30px auto;
+}
+input, select,textarea{
+    display: block;
+    width:100%;
+    background: rgb(239, 241, 247);
+    padding:10px;
+    border-radius: 5px;
+    font-size: 100%;
+    border:1px solid #d4d6dd;
+}
+input[type="submit"],input[type="button"]{
+    background: #50639E;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    border-color: #50639E;
+    margin-top:25px;
+}
+input:disabled, select:disabled{
+    border:2px solid #55caad;
+    color: #000;
+}
+textarea{
+    resize: none;
+    height:190px;
+}
+h4{
+    margin-top:17px;
+    margin-bottom: 10px;
+}
+h4:first-child{
+    margin-top: 0;
+}
+#error span, #error div{
+    color: red;
+    margin-top:15px;
+    border:2px solid red;
+    border-radius: 5px;
+    padding:15px;
+    display: block;
+    text-align: center;
+    background: #ffe0e0;
+}
+#error div{
+    color: #55caad;
+    border-color: #55caad;
+    background: #dbfff5;
+}
+#add-event h5{
+    color:red;
+    margin-top:10px;
+    font-size: 0.9em;
+}
+.successBar{
+    text-align: center;
+}
+.successBar img{
+    width:150px
+}
+.successBar p{
+    margin:10px auto;
+    opacity: 0.55;
+    max-width: 500px;
+    line-height: 28px;
+}
+.successBar a{
+    display: inline-block;
+    background: #50639E;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:14px;
+    margin-top:15px;
+}
+.successBar h2{
+    margin-top:15px;
+}
+
+/*-------------------------------- VIEWING EVENTS -------------------------------------*/
+article{
+    /* border:2px solid red; */
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow:0 2px 3px rgba(0,0,0,0.15);
+    padding: 25px;
+    position: relative;
+}
+
+article .text {
+    border-top:1px solid #d4d4d4;
+    border-bottom:1px solid #d4d4d4;
+    padding:15px 0;
+    line-height: 28px;
+    margin: 15px 0;
+}
+article .host{
+    opacity: 0.5;
+    font-style: italic;
+    text-align: right
+}
+article section{
+    border-top:1px solid #d4d4d4;
+    margin-top:15px;
+    display: flex;
+    justify-content: space-between;
+    padding-top:15px;
+}
+#noData{
+    font-weight: bold;
+    text-align: center;
+    margin-top:15%;
+    font-size: 1.7em;
+    opacity: 0.3;
+}
+.approvals{
+    display: flex;
+    align-items: center;
+}
+.approvals div, .options div, .options a{
+    background: #50639E;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right:10px;
+}
+.approvals .approved{
+    background: #4ba884;
+}
+.approvals .pending{
+    background: #e2bd6d;
+}
+.approvals .declined{
+    background: #ee4f6a;
+}
+.options{
+    display: inline-flex;
+}
+.options div, .options a{
+    margin:0;
+    margin-left:10px;
+    font-size: 1em;
+    padding: 12px;
+}
+.options div{
+    background: #b8bbc7;
+}
+@media screen and (max-width: 800px){
+    .logo, .buttons{
+        display: none;
+    }
+    .form-box{
+        padding:35px;
+    }
+}

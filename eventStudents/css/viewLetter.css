@@ -1,0 +1,67 @@
+.letter{
+    background: #fff url('../images/logo.PNG') 40px 40px no-repeat;
+    width:900px;
+    height: 1060px;
+    margin: auto;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+.letterHead{
+    text-align: left;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+.letterHead p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.letter h4{
+    font-size: 1.4em;
+    margin:0;
+}
+.letter .body{
+    flex-grow: 1;
+}
+.letter h3{
+    border-bottom: 1px solid #000;
+    padding-bottom: 17px;
+    margin: 15px 0;
+    font-weight: normal;
+}
+.letter p, .letter pre{
+    text-align-last: left;
+    line-height: 37px;
+    text-align: justify;
+    margin-top: 20px;
+}
+#print{
+    position: fixed;
+    bottom:30px;
+    right:30px;
+    background: #50639e;
+    border-radius: 50%;
+    color: #fff;
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+    cursor: pointer;
+
+}
+.signature{
+    width: 100%;
+    margin:40px;
+    text-align: center;
+    display:flex;
+    align-items:flex-end;
+    justify-content: space-between;
+}
+.signature img{
+    width: 170px;
+}
